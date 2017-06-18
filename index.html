@@ -1,0 +1,46 @@
+<h1 style="text-align: center;">Welcome to Ethereum Fair Bet</h1>
+<p style="text-align: center;"><span style="font-weight: 400;">These contracts allow you to bet Ethereum with other users.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Your chances to win are always 50/50 and are based on unpredictable hashes of block chain.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">You can bet as many times as you want at once.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Three possible amounts are available (0.01, 0.05 and 0.10 ETH).</span></p>
+<table align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><strong><span style="font-weight: 400;">Bet [ETH]</span></strong></td>
+<td style="text-align: center;"><strong><span style="font-weight: 400;">Contract address</span></strong></td>
+<td style="text-align: center;"><strong><span style="font-weight: 400;">Payload</span></strong></td>
+</tr>
+<tr style="text-align: center;">
+<td>0.01</td>
+<td><strong><span style="font-weight: 400;">0x12345678901234567890</span></strong></td>
+<td><strong><span style="font-weight: 400;">0x12345</span></strong></td>
+</tr>
+<tr style="text-align: center;">
+<td>0.05</td>
+<td><strong><span style="font-weight: 400;">0x12345678901234567890</span></strong></td>
+<td><strong><span style="font-weight: 400;">0x12345</span></strong></td>
+</tr>
+<tr style="text-align: center;">
+<td>0.10</td>
+<td><strong><span style="font-weight: 400;">0x12345678901234567890</span></strong></td>
+<td><strong><span style="font-weight: 400;">0x12345</span></strong></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;"><span style="font-weight: 400;">Contract fee is around the gas level on 0.001 ETH for each bet.</span></p>
+<h2 style="text-align: center;"><span style="font-weight: 400;">Chances to win</span></h2>
+<p style="text-align: center;"><span style="font-weight: 400;">To determine winner contract uses hashes next after second user transaction.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Example:</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">If the first user bet in block number 3883654 and second user bet in block number 3883657, contract will use hash of 3883658.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">Then it checks last bit of this hash. If it is 1 first user win. If it is 0 second user win.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">So in our exaple, due to </span><a href="https://etherscan.io/block/3883658"><span style="font-weight: 400;">hash of 3883658 block</span></a><span style="font-weight: 400;">, which is 0xe736ca63d82769091e10e73f1fee3b19bf2609e48d51a29281f96a2dd976a138, last bit is 0 and second user wins.</span>&nbsp;</p>
+<h2 style="text-align: center;"><span style="font-weight: 400;">How to bet</span></h2>
+<p style="text-align: center;"><span style="font-weight: 400;">To bet you have to simply send expected amount to contract address.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">It is possible to make as many bets as you want.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">All of them will be waiting for other users to bet.</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">You cannot play with yourself (unless you play from two addresses).</span></p>
+<h2 style="text-align: center;"><span style="font-weight: 400;">Source code</span></h2>
+<p style="text-align: center;">Source code is only around 100 lines. It is verified on eterscan.io:</p>
+<p style="text-align: center;"><a href="https://etherscan.io/address/0x0429047892b8a903c0b4fbbd26e85d288f7af958#code"><span style="font-weight: 400;">Contract for 0.01 ETH</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Contract for 0.05 ETH</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">Contract for 0.10 ETH</span><span style="font-weight: 400;"><br /></span></a><span style="font-weight: 400;">It is also availabe on github:</span></p>
+<p style="text-align: center;"><span style="font-weight: 400;">https://github.com/ethereum-fair-bet/ethereum-fair-bet/</span></p>
+<p style="text-align: center;"><br /><br /></p>
