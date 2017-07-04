@@ -21,5 +21,4 @@ function bet01() {
         if (!err)
             console.log(transactionHash);
     }));
-    alert('hello!');
 }
