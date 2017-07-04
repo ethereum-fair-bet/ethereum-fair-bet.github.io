@@ -1,2 +1,2 @@
 
-document.getElementById("bet01").onclick = function () { alert('hello!'); };
+function bet01() { alert('hello!'); };
